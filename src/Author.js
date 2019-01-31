@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Author = ({ authorName }) => (
-    <div>{authorName}</div>
+    <div>
+        <h4 align="center">{authorName}</h4>
+    </div>
 );
 
 Author.propTypes = {

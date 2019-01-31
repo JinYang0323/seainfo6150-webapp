@@ -29,4 +29,9 @@
   to {
     transform: rotate(360deg);
   }
+
+}
+
+p{
+    text-indent: 4em;
 }

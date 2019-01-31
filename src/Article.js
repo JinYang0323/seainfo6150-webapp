@@ -1,37 +1,36 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Title from './Title';
 import Date from './Date';
 import Author from './Author';
-import Children from './Children';
 
-const Article = ({ article }) => (
+export default class Article extends Component {
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div>
+                <Title title= {this.props.title} />
+                <Date date= {this.props.date} />
+                <Author authorName= {this.props.author} />
+                <div>{this.props.children}</div>
+            </div>
+        );
+    }
+}
+
+const Article2 = ({ props }) => (
     <div>
-        <Title title= {article.title} />
-        <Date date= {article.date} />
-        <Author authorName= {article.author} />
-        <Children />
+        <Title title= {props.title} />
+        <Date date= {props.date} />
+        <Author authorName= {props.author} />
+        <div>{props.children}</div>
     </div>
 );
 
-Article.propTypes = {
-    article: PropTypes.Article
-};
-
-
-/*
-const Article = ({ title, date, author }) => (
-    <div>
-        <Title title={title} />
-        <Date date={date} />
-        <Author authorName={author} />
-        <Children />
-    </div>
-);
-
-Article.propTypes = {
+Article2.propTypes = {
     title: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired
-};*/
-export default Article;
+};
