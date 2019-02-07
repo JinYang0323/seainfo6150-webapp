@@ -3,17 +3,7 @@ import PropTypes from "prop-types";
 import ArticleTableRow from "./ArticleTableRow";
 
 const ArticleTable = ({ articles }) => (
-  <table>
-    <caption>Data of news articles</caption>
-    <thead>
-      <tr>
-        <th>Check</th>
-        <th>Status</th>
-        <th>Author</th>
-        <th>Date</th>
-        <th>short Text</th>
-      </tr>
-    </thead>
+  <table border="1">
     {// this iterates through the articles JSON and
     // calls your ArticleTableRow component for each article
     Object.values(articles).map(article => {

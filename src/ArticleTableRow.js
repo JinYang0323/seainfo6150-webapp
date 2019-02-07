@@ -29,21 +29,7 @@ class ArticleTableRow extends React.Component {
     //
     return (
       <tr>
-        <td>
-          <input type="checkbox" onClick={this.onClick.bind(this)} />
-        </td>
-        <td>
-          <span>{selectedStatus}</span>
-        </td>
-        <td>
-          <address>{this.props.author}</address>
-        </td>
-        <td>
-          <date>{this.props.date}</date>
-        </td>
-        <td>
-          <p>{this.props.shortText}</p>
-        </td>
+        <td>Replace this div with your table row HTML</td>
       </tr>
     );
   }
