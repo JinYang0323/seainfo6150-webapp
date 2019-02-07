@@ -36,13 +36,13 @@ class ArticleTableRow extends React.Component {
           <span>{selectedStatus}</span>
         </td>
         <td>
-          <span class="author">{this.props.author}</span>
+          <address>{this.props.author}</address>
         </td>
         <td>
-          <time>{this.props.date}</time>
+          <date>{this.props.date}</date>
         </td>
         <td>
-          <span>{this.props.shortText}</span>
+          <p>{this.props.shortText}</p>
         </td>
       </tr>
     );
