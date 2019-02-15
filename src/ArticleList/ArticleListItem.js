@@ -9,7 +9,7 @@ class ArticleListItem extends React.Component {
 
   render() {
     return (
-      <ul className={styles.container}>
+      <ul>
         <li>
           <h2 class={styles.title}>{this.props.title}</h2>
         </li>
@@ -20,7 +20,7 @@ class ArticleListItem extends React.Component {
           <address>By: {this.props.author}</address>
         </li>
         <li>
-          <date>{this.props.date}</date>
+          <time>{this.props.date}</time>
         </li>
       </ul>
     );

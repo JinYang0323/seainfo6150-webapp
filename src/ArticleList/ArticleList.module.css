@@ -1,7 +1,22 @@
 .container {
   font-family: "Times New Roman", Times, serif;
-  border: 2px dashed black;
+  border: 2px dotted black;
+  border-radius: 1em;
   margin: 5em;
-  padding: 5em;
+  padding: 0;
   background: rgb(158, 157, 157);
+}
+.articleInfo {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  border: 1px solid rgb(235, 4, 4);
+  border-radius: 1em;
+  box-shadow: 0 1em 1em rgb(58, 53, 53);
+  margin: 2em;
+  background-image: linear-gradient(to right, pink, white 15%);
+}
+
+.articleList {
+  flex: auto;
 }
