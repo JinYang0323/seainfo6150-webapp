@@ -10,12 +10,16 @@ li {
   margin-bottom: 0;
 }
 
+ul {
+  margin-right: 2em;
+}
+
 .shortText {
   margin-top: 0;
+  text-indent: 0;
 }
 
 address {
-  text-align: right;
   margin-right: 2em;
 }
 
@@ -23,6 +27,5 @@ time {
   font-weight: bold;
   margin-right: 2em;
   display: block;
-  text-align: right;
   margin-bottom: 1em;
 }

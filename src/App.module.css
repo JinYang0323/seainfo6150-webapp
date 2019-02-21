@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  text-indent: 4em;
+}
+
+.topPanel,
+.bottomPanel {
+  margin: 1em;
+  text-align: left;
+  color: white;
+  background-color: rgb(197, 9, 9);
+  line-height: 10em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.topPanel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.articlePanel {
+  font-family: "Times New Roman", Times, serif;
+  margin: 1em;
+  padding: 0;
+  background: rgb(158, 157, 157);
+}
+
+.textLeft,
+.textRight {
+  margin-right: 3em;
+}
+
+.textLeft {
+  font-size: 2em;
+  font-weight: bold;
+}
