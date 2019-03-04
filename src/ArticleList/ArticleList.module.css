@@ -1,8 +1,7 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   margin: 1em;
   padding: 0;
   background: rgb(158, 157, 157);
@@ -16,4 +15,29 @@
 
 .articleList {
   flex: auto;
+}
+
+@supports not (display: grid) {
+  .container div {
+    float: left;
+  }
+}
+
+@supports (display: grid) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (min-width: 800px) {
+    .container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
